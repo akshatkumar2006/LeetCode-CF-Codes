@@ -28,7 +28,7 @@ public class MergeTwoBinaryTree {
 		private TreeNode merge(TreeNode node1, TreeNode node2) {
 			// TODO Auto-generated method stub
 			
-			return null;
+			return node1;
 		}
 	}
 }
