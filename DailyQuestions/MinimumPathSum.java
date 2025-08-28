@@ -1,4 +1,4 @@
-package Codes;
+package DailyQuestions;
 
 import java.util.Arrays;
 

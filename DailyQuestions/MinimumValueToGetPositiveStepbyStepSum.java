@@ -1,4 +1,4 @@
-package Codes;
+package DailyQuestions;
 
 public class MinimumValueToGetPositiveStepbyStepSum {
 	class Solution {
