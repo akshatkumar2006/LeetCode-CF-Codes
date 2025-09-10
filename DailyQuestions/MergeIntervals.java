@@ -7,17 +7,17 @@ public class MergeIntervals {
 	class Solution {
 		public int[][] merge(int[][] inter) {
 			Arrays.sort(inter, (a, b) -> a[0] - b[0]);
-			ArrayList<int[]> l = new ArrayList<>();
+			ArrayList<int[]> ll = new ArrayList<>();
 			for (int[] p : inter) {
-				if (l.size() == 0 || l.get(l.size() - 1)[1] < p[0]) {
-					l.add(p);
+				if (ll.size() == 0 || ll.get(ll.size() - 1)[1] < p[0]) {
+					ll.add(p);
 				} else {
-					// l.set(l.size()-1,new int
-					// []{l.get(l.size()-1)[0],Math.max(l.get(l.size()-1)[1],p[1]))});
-					l.get(l.size() - 1)[1] = Math.max(l.get(l.size() - 1)[1], p[1]);
+					// ll.set(ll.size()-1,new int
+					// []{ll.get(ll.size()-1)[0],Math.max(ll.get(ll.size()-1)[1],p[1]))});
+					ll.get(ll.size() - 1)[1] = Math.max(ll.get(ll.size() - 1)[1], p[1]);
 				}
 			}
-			return l.toArray(new int[l.size()][]);
+			return ll.toArray(new int[ll.size()][]);
 
 		}
 	}
